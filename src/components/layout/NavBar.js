@@ -23,8 +23,8 @@ export default class NavBar extends Component {
       <div className="row">
         <div className="column">
           <h4>Machine Learning</h4>
-          <Link style={{height: "2rem"}}  to="/tut" >Linear Regression</Link>
-          <Link style={{height: "2rem"}}  to="#">Polynomial Regression</Link>
+          <Link style={{height: "2rem"}} to="/tut" >Linear Regression</Link>
+          <Link style={{height: "2rem"}} to="#">Polynomial Regression</Link>
           <Link style={{height: "2rem"}} to="#">Logistic Regression</Link>
           <Link style={{height: "2rem"}} to="#">K mean clistering</Link>
           <Link style={{height: "2rem"}} to="#">Support Vector Machines</Link>

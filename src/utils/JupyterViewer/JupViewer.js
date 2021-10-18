@@ -409,7 +409,7 @@ class JupViewer extends React.Component {
                                             style={{
                                                 margin: '0px 5px'
                                             }}
-                                            id = "dt"
+                                            
                                             defaultChecked checkedChildren="dark theme" unCheckedChildren="light theme"
                                             onChange={this.themeChanger.bind(this)}
                                         />
