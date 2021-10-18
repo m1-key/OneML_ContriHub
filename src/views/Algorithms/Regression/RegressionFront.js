@@ -41,7 +41,7 @@ class RegressionFront extends React.Component {
               appearance="inverse"
             >
               <Sidenav.Body>
-                <Nav>
+                <Nav style={{height: 650}}>
                   <Nav.Item eventKey="1" icon={<Icon icon="dashboard" />}>
                     Linear Regression
                   </Nav.Item>
