@@ -19,7 +19,7 @@
   Make sure you are using node version <= 14
 
   #+BEGIN_SRC org
-  1. git clone https://github.com/ContriHUB/OneML_ContriHub.git
+  1. git clone https://github.com/m1-key/OneML_ContriHub.git
   2. cd OneML_ContriHub
   3. install venv(pip package) and activate it
   4. add env to .gitignore
