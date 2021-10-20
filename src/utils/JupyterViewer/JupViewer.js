@@ -300,6 +300,36 @@ class JupViewer extends React.Component {
         console.log(`switch to ${ev}`);
     }
 
+    yellowChanger(ev) {
+        if (ev) {
+            this.setState({
+                // Editor Theme
+                ed_theme: 'yellowTheme',
+                text_ed_theme: 'yellow',
+                //themes:
+                background_theme: "black",
+                background_text_theme: 'black',
+                // background_input_theme: '#2F3129',
+                background_input_theme: 'yellow',
+                background_output_theme: 'yellow',
+            })
+        }
+        else {
+            this.setState({
+               // Editor Theme
+               ed_theme: 'darkTheme',
+               text_ed_theme: 'monokai',
+               //themes:
+               background_theme: "black",
+               background_text_theme: 'white',
+               // background_input_theme: '#2F3129',
+               background_input_theme: '#272822',
+               background_output_theme: '#2F3129',
+            })
+        }
+        console.log(`switch to ${ev}`);
+    }
+
     gutterChanger(ev) {
         if (ev) {
             this.setState({
@@ -379,8 +409,17 @@ class JupViewer extends React.Component {
                                             style={{
                                                 margin: '0px 5px'
                                             }}
+                                            
                                             defaultChecked checkedChildren="dark theme" unCheckedChildren="light theme"
                                             onChange={this.themeChanger.bind(this)}
+                                        />
+                                        <Switch
+                                            style={{
+                                                margin: '0px 5px'
+                                            }}
+                                            
+                                            checkedChildren="Yellow Theme" unCheckedChildren=" Yellow Theme"
+                                            onChange={this.yellowChanger.bind(this)}
                                         />
                                         <Switch
                                             style={{
